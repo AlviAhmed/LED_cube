@@ -15,7 +15,18 @@
 #define layer1  PC0
 #define layer2  PB2
 #define layer3	PB1
-///  
+/// 
+///////   
+#define purp1 DDRD |= (1 << PD5) 
+#define or2 DDRD |= (1 << PD6); 
+#define yel3 DDRD |= (1 << PD7); 
+#define gra4 DDRB |= (1 << PB0); 
+#define whit5 DDRC|= (1 << PC5); 
+#define bro6  DDRC|= (1 << PC4); 
+#define gre7  DDRC|= (1 << PC3); 
+#define blu8  DDRC |= (1 << PC2); 
+#define red9 DDRC |= (1  << PC1); 
+////////////
 //active HIGH
 #define purp1on PORTD |= (1 << PD5) 
 #define purp1off PORTD &= ~ (1 << PD5)
@@ -35,10 +46,6 @@
 #define blu8off	PORTC &= ~ (1 << PC2);
 #define red9on	PORTC |= (1  << PC1); 
 #define red9off PORTC &= ~ (1 << PC1);
-///  
-//// ON //// 
-
-//// 
 
 
 int main(void)
