@@ -61,7 +61,6 @@
 #define layer3off	PORTB &= ~ ( 1 << PB1) 
 ///////
 
-#define n 1000
 
 
 int main(void)
